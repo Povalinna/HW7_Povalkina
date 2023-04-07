@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Яку дію хочете виконати:\n add,\n sub,\n mult,\n div \n (введіть)");
+        if (n == "add")
+             { let m = +prompt(`Введіть перше число`);
+                let m1 = +prompt(`Введіть друге число`);
+                let n1 = m + m1;
+                alert(`Сумма чисел дорівнює ${m} + ${m1} = ${n1}`)}
+            else 
+            if (n == "sub")
+                { let m = +prompt(`Введіть перше число`);
+                  let m1 = +prompt(`Введіть друге число`);
+                  let n2 = m - m1;
+                  alert(`Результат віднімання ${m} - ${m1} = ${n2}`)}
+             else 
+             if (n == "mult")
+                {let m = +prompt(`Введіть перше число`);
+                 let m1 = +prompt(`Введіть друге число`);
+                 let n3 = m*m1;
+                 alert(`Результат множення буде ${m} * ${m1} = ${n3}`)}
+               else 
+               if (n == "div")
+                   {let m = +prompt(`Введіть перше число`);
+                    let m1 = +prompt(`Введіть друге число`);
+                    let n4 = m/m1;
+                    alert(`Результат поділу буде ${m} / ${m1} = ${n4}`)}
+                 else
+                 if (n == ``)
+                    {alert(`недопустиме значення для дії.
+                    Повторіть операцію`) }
+                else
+                if (n === null)
+                    { alert(`Ви скасували операцію`)}
+    </script>
+    </body>
+</html>
